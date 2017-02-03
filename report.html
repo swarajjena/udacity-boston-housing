@@ -11880,7 +11880,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Minimum price of the data</span>
@@ -11957,7 +11957,7 @@ Standard deviation of prices: $165,171.13
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-Increase in RM will lead to decrease in MEDV,because normally if the average rooms is more in neighborhood then for the same house price will be lesser ,because people prefer house with more rooms.</p>
+Increase in RM will lead to increase in MEDV,because normally if the average rooms is more in neighborhood then  house price will be more ,because people prefer house with more rooms.</p>
 <p>LSTAT increase will decrease MEDV ,because people do not want to prefer a poor locality</p>
 <p>PTRATIO increase will also negatively affect MEDV because their might be shortage of teachers.</p>
 
@@ -11993,7 +11993,7 @@ Increase in RM will lead to decrease in MEDV,because normally if the average roo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;r2_score&#39;</span>
@@ -12058,7 +12058,7 @@ Increase in RM will lead to decrease in MEDV,because normally if the average roo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Calculate the performance of this model</span>
@@ -12118,7 +12118,7 @@ Increase in RM will lead to decrease in MEDV,because normally if the average roo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;train_test_split&#39;</span>
@@ -12128,7 +12128,7 @@ Increase in RM will lead to decrease in MEDV,because normally if the average roo
 
 <span class="c1"># TODO: Shuffle and split the data into training and testing subsets</span>
 
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">feature_shuf</span><span class="p">,</span> <span class="n">prices_shuf</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">X_train</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 <span class="n">X_test</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;Training and testing split was successful.&quot;</span>
@@ -13242,7 +13242,7 @@ IdzxFCIi0nyqi0VEREREREREREREREREREREREREREREREREREREREREREREREREREREOtr/D31D
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> For max depth 6,the training score decreases when adding more data points but the test score increases on adding more data. Hence adding more data will increase the test score a bit more and improve the model.This is a case of high variance.</p>
+<p><strong>Answer: </strong> For max depth 6,the training score decreases when adding more data points but the test score increases on adding more data. Hence adding more data will increase the test score a bit more and improve the model.This is a case of high variance.But after adding a lot of data at a certain point adding more data won't help because both curves will converge and the test set score won't increase much.</p>
 
 </div>
 </div>
@@ -13718,7 +13718,7 @@ ppRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZTx/1wdcrTWl7cgAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong>  Maximu depth of 3 seems to provide best result for unseen data ,because the score for training data is good and both training and test data score are close.WHich means it is not suffering from high bias/variance.</p>
+<p><strong>Answer: </strong>  Maximum depth of 3 seems to provide best result for unseen data ,because the score for training data is almost 0.8,which is good and test data achieves similar score as that of train data,0.75 approx. Which means the model is predicting the test data well. So it is expected that it will perform well for unseen data as well. maximum depth 1 is suffering from high bias and max depth of 6 and more causes high variance. Hence some point between 3-5 is expected to give the best performance on unseen data.</p>
 
 </div>
 </div>
@@ -13770,7 +13770,8 @@ ppRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZTx/1wdcrTWl7cgAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> k -fold cross validation training technique divides the whole dataset into k subsets and runs the model considering each subset as test set one at a time and then averages the result. Without cross validation it is really difficult to divide the data properly into testing and traing datasets. Because of which other parameter tuning might not give the best model .</p>
+<p><strong>Answer: </strong> k -fold cross validation training technique divides the whole dataset into k subsets . It takes one of the k subsets as test set and others as training set. This is repeated for all k subsets one at a time and then averages the result.By doing this all of the samples are utilized for training and validation .</p>
+<p>Without k fold cross validation or any other similar CV it is really difficult to divide the data properly into testing and traing datasets. Sometimes it might happen that most of the test set observations or similar observations does not occur in the training set. So it won't be able to generalize well.IT won't be able to predict the test set even after optimizing by grid search. By doing k-fold CV all the dataset will be used for training and validation,hence this kind of problem won't occur.</p>
 
 </div>
 </div>
@@ -13806,7 +13807,7 @@ ppRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZTx/1wdcrTWl7cgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;make_scorer&#39;, &#39;DecisionTreeRegressor&#39;, and &#39;GridSearchCV&#39;</span>
@@ -13868,7 +13869,7 @@ ppRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZTx/1wdcrTWl7cgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Fit the training data to the model using grid search</span>
@@ -13953,7 +13954,7 @@ ppRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZTx/1wdcrTWl7cgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a matrix for client data</span>
@@ -13978,9 +13979,74 @@ ppRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZTx/1wdcrTWl7cgAAAAAElFTkSuQmCC
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Predicted selling price for Client 1&#39;s home: $408,635.29
-Predicted selling price for Client 2&#39;s home: $227,220.00
-Predicted selling price for Client 3&#39;s home: $896,280.00
+<pre>Predicted selling price for Client 1&#39;s home: $403,025.00
+Predicted selling price for Client 2&#39;s home: $237,478.72
+Predicted selling price for Client 3&#39;s home: $931,636.36
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#####Extra code to validate the predicted price</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">NearestNeighbors</span>
+<span class="n">num_neighbors</span><span class="o">=</span><span class="mi">5</span>
+<span class="k">def</span> <span class="nf">nearest_neighbor_price</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">find_nearest_neighbor_indexes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>  <span class="c1"># x is your vector and X is the data set.</span>
+        <span class="n">neigh</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span> <span class="n">num_neighbors</span> <span class="p">)</span>
+        <span class="n">neigh</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">distance</span><span class="p">,</span> <span class="n">indexes</span> <span class="o">=</span> <span class="n">neigh</span><span class="o">.</span><span class="n">kneighbors</span><span class="p">(</span> <span class="n">x</span> <span class="p">)</span>
+        <span class="k">return</span> <span class="n">indexes</span>
+    <span class="n">indexes</span> <span class="o">=</span> <span class="n">find_nearest_neighbor_indexes</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span>
+    <span class="n">sum_prices</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indexes</span><span class="p">:</span>
+        <span class="n">sum_prices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prices</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">neighbor_avg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">sum_prices</span><span class="p">)</span>
+    <span class="n">neighbor_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">sum_prices</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">neighbor_avg</span><span class="p">,</span><span class="n">neighbor_std</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>  
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">client_data</span><span class="p">:</span>
+    <span class="n">val</span><span class="p">,</span><span class="n">std</span><span class="o">=</span><span class="n">nearest_neighbor_price</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">print</span> <span class="s2">&quot;The predicted {} nearest neighbors price for home {} is: ${:,.2f} and std dev. is ${:,.2f}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_neighbors</span><span class="p">,</span><span class="n">index</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span><span class="n">std</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The predicted 5 nearest neighbors price for home 1 is: $372,540.00 and std dev. is $63,621.34
+The predicted 5 nearest neighbors price for home 2 is: $162,120.00 and std dev. is $36,479.61
+The predicted 5 nearest neighbors price for home 3 is: $897,120.00 and std dev. is $108,587.67
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:386: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and willraise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:386: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and willraise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  DeprecationWarning)
+/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py:386: DeprecationWarning: Passing 1d arrays as data is deprecated in 0.17 and willraise ValueError in 0.19. Reshape your data either using X.reshape(-1, 1) if your data has a single feature or X.reshape(1, -1) if it contains a single sample.
+  DeprecationWarning)
 </pre>
 </div>
 </div>
@@ -13994,7 +14060,13 @@ Predicted selling price for Client 3&#39;s home: $896,280.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The predicted prices seems reasonable to me,so I would recommend the client to go with this value.</p>
+<p><strong>Answer: </strong> 
+From the above code output it is clear that all three houses are within 1 standard deviation of it's 5 nearest neighbors.So it seems the price predicted follows the trend in the training dataset.</p>
+<p>Also by comparing all three houses
+1.Total number of rooms is Max for the house of client 3,then client 1 and client2 is min.The predicted price follows the same . As increase in room increases price ,hence with this regard the prediction is acceptable.</p>
+<p>2.With increase in neighborhood poverty level, price is expected to decrease. As client 2 neighborhood has highest poverty level so price is min,and for client 3 it is max,client 1 is in between.</p>
+<p>3.Student-teacher ratio of nearby schools increase also cause decrease in price.the ratio in client 3 is less in comarison to other two ,hence predicted price for house 3 is high. Same applies between client 1 and 2.</p>
+<p>All the above explainations support the predicted price with respect to the corresponding features.Hence This price can be recommended to the client.</p>
 
 </div>
 </div>
@@ -14011,7 +14083,7 @@ Predicted selling price for Client 3&#39;s home: $896,280.00
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">PredictTrials</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">fit_model</span><span class="p">,</span> <span class="n">client_data</span><span class="p">)</span>
@@ -14030,17 +14102,17 @@ Predicted selling price for Client 3&#39;s home: $896,280.00
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Trial 1: $391,183.33
-Trial 2: $424,935.00
+Trial 2: $419,700.00
 Trial 3: $415,800.00
 Trial 4: $420,622.22
-Trial 5: $418,377.27
+Trial 5: $413,334.78
 Trial 6: $411,931.58
 Trial 7: $399,663.16
 Trial 8: $407,232.00
 Trial 9: $351,577.61
 Trial 10: $413,700.00
 
-Range in prices: $73,357.39
+Range in prices: $69,044.61
 </pre>
 </div>
 </div>
